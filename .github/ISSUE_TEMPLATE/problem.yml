@@ -1,4 +1,4 @@
-name: Problem Report
+name: Report a problem
 description: Tell us about a problem.
 title: "[Problem]: <title>"
 labels: ["triage:pending"]

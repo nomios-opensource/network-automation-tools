@@ -1,15 +1,15 @@
-name: Tools
+name: Share a tool
 description: Add a tool to our directory.
 title: "[Tool]: <name>"
 labels: ["status:pending"]
 body:
   - type: checkboxes
     attributes:
-      label: Is there an issue for this tool? 
+      label: Is there an issue for this tool?
       description: Please search to see if an issue exists for this tool.
       options:
         - label: I have searched and did not find an issue.
-          required: true 
+          required: true
   - type: input
     id: name
     attributes:
@@ -39,6 +39,6 @@ body:
     id: url
     attributes:
       label: Where can more information be found for the tool?
-      description: Share a link to a site, blog or social. 
+      description: Share a link to a site, blog or social.
     validations:
       required: true
