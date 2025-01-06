@@ -11,9 +11,9 @@ body:
         - label: I have searched and did not find an issue.
           required: true
   - type: dropdown
-    id: type
+    id: category
     attributes:
-      label: What is the type of problem?
+      label: What is the problem category?
       options:
         - Tool
         - App
