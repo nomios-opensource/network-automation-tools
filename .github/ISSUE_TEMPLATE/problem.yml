@@ -1,0 +1,41 @@
+name: Problem Report
+description: Tell us about a problem.
+title: "[Problem]: <title>"
+labels: ["triage:pending"]
+body:
+  - type: checkboxes
+    attributes:
+      label: Is there an issue for this problem?
+      description: Please search to see if an issue exists for this problem.
+      options:
+        - label: I have searched and did not find an issue.
+          required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: What is the type of problem?
+      options:
+        - Tool
+        - App
+        - Development
+    validations:
+      required: true
+  - type: dropdown
+    id: affected
+    attributes:
+      label: Who does the problem affect?
+      options:
+        - Only me
+        - Some users
+        - All users
+  - type: textarea
+    id: description
+    attributes:
+      label: What is the problem?
+      description: Describe to us the problem in detail.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: What steps can we follow to reproduce the problem?
